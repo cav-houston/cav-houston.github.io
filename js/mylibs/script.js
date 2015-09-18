@@ -218,22 +218,22 @@ interval: 12500
 });
 
 //contact form validation
-$(function(){$('.error').hide();$(".cool-button").click(function(){$('.error').hide(); $("label#invalid_error").hide();$("label#email_error").hide();
-var name=$("input#contact_name").val();
-var email=$("input#contact_email").val();if(email==""){$("label#email_error").show();$("input#contact_email").focus();return false;}
-var emailRegEx =/^([a-zA-Z0-9])(([a-zA-Z0-9])*([\._-])?([a-zA-Z0-9]))*@(([a-zA-Z0-9\-])+(\.))+([a-zA-Z]{2,4})+$/
-var subject=$("input#contact_subject").val();
-var message=$("textarea#contact_message").val();if(message==""){$("label#message_error").show();$("textarea#contact_message").focus();return false;}
-if (document.getElementById('contact_email').value.search(emailRegEx )==-1) 
-{
-$("label#invalid_error").show();$("input#contact_email").focus();return false;
-}
-else
-{
-var dataString='contact_name='+name+'&contact_email='+email+'&contact_subject='+subject+'&contact_message='+message;
-//$.ajax({type:"POST",url:"php/contact.php",data:dataString,success:function(){$('#contact-form').html("<div id='message'></div>");$('#message').html("<h3>Request Submitted</h3>").append("<p>Thank you for submiting your request. If you have any further questions, you can always mail us @ info@example.com or call our support team on +1 800 000 000</p>").hide().fadeIn(1500,function(){$('#message').append("<img id='checkmark' src='images/submit.png' />");});}});
-}
-return false;});});
+// $(function(){$('.error').hide();$(".cool-button").click(function(){$('.error').hide(); $("label#invalid_error").hide();$("label#email_error").hide();
+// var name=$("input#contact_name").val();
+// var email=$("input#contact_email").val();if(email==""){$("label#email_error").show();$("input#contact_email").focus();return false;}
+// var emailRegEx =/^([a-zA-Z0-9])(([a-zA-Z0-9])*([\._-])?([a-zA-Z0-9]))*@(([a-zA-Z0-9\-])+(\.))+([a-zA-Z]{2,4})+$/
+// var subject=$("input#contact_subject").val();
+// var message=$("textarea#contact_message").val();if(message==""){$("label#message_error").show();$("textarea#contact_message").focus();return false;}
+// if (document.getElementById('contact_email').value.search(emailRegEx )==-1) 
+// {
+// $("label#invalid_error").show();$("input#contact_email").focus();return false;
+// }
+// else
+// {
+// var dataString='contact_name='+name+'&contact_email='+email+'&contact_subject='+subject+'&contact_message='+message;
+// $.ajax({type:"POST",url:"php/contact.php",data:dataString,success:function(){$('#contact-form').html("<div id='message'></div>");$('#message').html("<h3>Request Submitted</h3>").append("<p>Thank you for submiting your request. If you have any further questions, you can always mail us @ info@example.com or call our support team on +1 800 000 000</p>").hide().fadeIn(1500,function(){$('#message').append("<img id='checkmark' src='images/submit.png' />");});}});
+// }
+// return false;});});
 
 //newsletter validation
 $(function(){$('.error').hide();$(".cool-button2").click(function(){$('.error').hide();
