@@ -236,6 +236,7 @@
 								<form id="contact-form" method="POST" action="http://formspree.io/service@cav.tv">
 									<input type="hidden" name="_next" value="/thanks.html" />
 									<input type="hidden" name="_cc" value="kevin@cav.tv" />
+									<input type="hidden" name="_subject" value="CAV.TV - Website Contact Form" />
 									
 									<p class="form-subscr-field">
 										<label for="contact_email" id="contact_email_label">Your E-mail Address: *</label>
@@ -244,16 +245,12 @@
 										<label class="error error-tip" for="contact_email" id="invalid_error" style="display: none; ">Invalid email address.</label>
 									</p>				
 									<p class="form-subscr-field">
-										<label for="contact_subject" id="contact_subject_label">Subject:</label>
-										<input id="contact_subject" type="text" name="_subject" class="inputbox"  size="10" />
-									</p>				
-									<p class="form-subscr-field">
 										<label for="contact_message" id="comment_label">Message: *</label>
 										<textarea id="contact_message" name="contact_message" rows="8" cols="30" ></textarea>
 										<label class="error error-tip" for="contact_message" id="message_error" style="display: none; ">This field is required.</label>
 									</p>
 									<div class="submit-contact">
-										<p><input type="submit" name="submit" class="cool-button csbutton spot-action" id="contact_button" value="Submit" /></p> 
+										<p><input type="submit" class="cool-button csbutton spot-action" id="contact_button" value="Send" /></p> 
 									</div>
 								</form>
 													
